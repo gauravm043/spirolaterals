@@ -1,0 +1,70 @@
+#left-canvas {
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    background-color: black;
+}
+
+#right-canvas {
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    left: 700px;
+    background-color: black;
+}
+
+#input1 {
+    position: absolute;
+    border-radius: 15px;
+    right: 500px;
+    top: 500px;
+}
+#input2 {
+    position: absolute;
+    border-radius: 15px;
+    right: 450px;
+    top: 500px;
+}
+#input3 {
+    position: absolute;
+    border-radius: 15px;
+    right: 400px;
+    top: 500px;
+}
+#input4 {
+    position: absolute;
+    border-radius: 15px;
+    right: 350px;
+    top: 500px;
+}
+#input5 {
+    position: absolute;
+    border-radius: 15px;
+    right: 300px;
+    top: 500px;
+}
+
+#main-toolbar #activity-button {
+    background-image: url(../activity/activity.svg);
+}
+
+#main-toolbar #speed-down-button {
+    background-image: url(../icons/speed-down.svg);
+}
+
+#main-toolbar #speed-up-button {
+    background-image: url(../icons/speed-up.svg);
+}
+
+#main-toolbar #play-button {
+    background-image: url(../icons/play.svg);
+}
+
+#main-toolbar #pause-button {
+    background-image: url(../icons/pause.svg);
+}
+
+#main-toolbar #next-pattern {
+    background-image: url(../icons/next.svg);
+}

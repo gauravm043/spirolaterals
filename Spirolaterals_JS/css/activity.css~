@@ -1,0 +1,33 @@
+#left-canvas {
+  margin: 0;
+  text-align: center;
+}
+
+#right-canvas {
+  margin: 0;
+  text-align: center;
+}
+
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity.svg);
+}
+
+#main-toolbar #simple-clock-button {
+  background-image: url(../icons/speed-down.svg);
+}
+
+#main-toolbar #nice-clock-button {
+  background-image: url(../icons/speed-up.svg);
+}
+
+#main-toolbar #write-time-button {
+  background-image: url(../icons/green.svg);
+}
+
+#main-toolbar #write-date-button {
+  background-image: url(../icons/red.svg);
+}
+
+#main-toolbar #next-pattern {
+  background-image: url(../icons/cyan.svg);
+}

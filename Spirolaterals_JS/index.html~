@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Spirolaterals Activity</title>
+<link rel="stylesheet" href="lib/sugar-web/graphics/css/sugar.css">
+<link rel="stylesheet" href="css/activity.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+	<script data-main="js/loader" src="lib/require.js"></script>
+</head>
+
+<body>
+  <div id="main-toolbar" class="toolbar">
+    <button class="toolbutton" id="activity-button" title="My Activity"></button>
+    <button class="toolbutton" id="simple-clock-button" title="Slow Down"></button>
+    <button class="toolbutton" id="nice-clock-button" title="Speed Up"></button>
+    <hr/>
+    <button class="toolbutton" id="write-time-button" title="Draw"></button>
+    <button class="toolbutton" id="write-date-button" title="Stop"></button>
+    <button class="toolbutton" id="next-pattern" title="Next Pattern"></button>
+    <button class="toolbutton pull-right" id="stop-button" title="Stop"></button>
+  </div>
+
+<!--
+
+<script type="text/javascript">
+
+function toRadians (angle) {
+    return angle * (Math.PI / 180);
+}
+function draw_turtle(context, x, y)
+{
+    img = new Image();
+    img.onload = function() {
+        context.drawImage(img, x - img.width/2, y);
+    }
+    img.src = "./turtle.svg";
+}
+function draw_problem(element_id){
+    var c = document.getElementById(element_id);
+    var cxt = c.getContext("2d");
+    var unit = c.height*0.12;
+    var dir = [90, 0, 270, 180];
+    var size = [1, 2, 1, 5, 2]; // Will be random
+    var iterations = 4;
+    var where = 0;
+    
+    Xcenter = c.width/2;
+    Ycenter = c.height * 0.8;
+    draw_turtle(cxt, Xcenter, Ycenter);
+    while (iterations > 0)
+    {
+        iterations = iterations - 1;
+        for(var turn = 0; turn < 5; turn++)
+        {
+            cxt.beginPath();
+            cxt.moveTo (Xcenter , Ycenter);
+            Xcenter = Xcenter + size[turn]* unit* Math.cos(toRadians(dir[where]));
+            Ycenter = Ycenter - size[turn]* unit* Math.sin(toRadians(dir[where]));
+            cxt.lineTo (Xcenter , Ycenter);
+            cxt.strokeStyle = "#00ff00";
+            cxt.lineWidth = 3;
+            cxt.stroke();
+            where = (where + 1)%4;
+        }
+    }
+}
+
+$(document).ready(function(){
+            draw_problem("left-canvas");
+        });
+
+</script>-->
+<canvas id="left-canvas" width="400" height="400" style="background-color:black"></canvas>
+<canvas id="right-canvas" width="400" height="400" style="background-color:black"></canvas>
+<!--
+  <div id="canvas">
+    <div id="clock-container">
+      <canvas id="clock-canvas"></canvas>
+    </div>
+    <div id="text-container">
+      <p style="display: none" id="text-time">What Time Is It?</p>
+      <p style="display: none" id="text-date">.</p>
+    </div>
+  </div>-->
+</body>
+</html>

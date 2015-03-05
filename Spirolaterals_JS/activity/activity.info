@@ -1,0 +1,9 @@
+[Activity]
+name = Spirolaterals_JS
+activity_version = 1
+host_version = 1
+bundle_id = org.sugarlabs.Spirolaterals_JS
+icon = activity
+show_launcher = yes
+exec = sugar-activity-web
+

@@ -1,0 +1,89 @@
+define(function (require) {
+    var activity = require("sugar-web/activity/activity");
+    var radioButtonsGroup = require("sugar-web/graphics/radiobuttonsgroup");
+    var mustache = require("mustache");
+    var moment = require("moment");
+
+    // Manipulate the DOM only when it is ready.
+    require(['domReady!'], function (doc) {
+
+        // Initialize the activity.
+        activity.setup();
+
+        var requestAnimationFrame = window.requestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.msRequestAnimationFrame;
+
+        function Spirolaterals_JS() {
+          
+           
+        }
+	Spirolaterals_JS.prototype.start = function (face) {
+	
+	}
+      
+        Spirolaterals_JS.prototype.update = function () {
+          
+        }
+
+        Spirolaterals_JS.prototype.drawBackground = function () {
+          
+        }
+
+     
+        Spirolaterals_JS.prototype.drawSimpleBackground = function () {
+           
+        }
+
+        Spirolaterals_JS.prototype.drawNiceBackground = function () {
+        
+        }
+
+       
+        Spirolaterals_JS.prototype.drawNumbers = function () {
+         
+        }
+
+        
+        Spirolaterals_JS.prototype.drawHands = function () {
+          
+            }
+        }
+
+        // Create the Spirolaterals_JS.
+
+        var Spirolaterals_JS = new Spirolaterals_JS();
+        Spirolaterals_JS.start();
+/*
+        // UI controls.
+
+        var simpleSpirolaterals_JSButton = document.getElementById("simple-clock-button");
+        simpleSpirolaterals_JSButton.onclick = function () {
+            Spirolaterals_JS.changeFace("simple");
+        };
+
+        var niceSpirolaterals_JSButton = document.getElementById("nice-clock-button");
+        niceSpirolaterals_JSButton.onclick = function () {
+            Spirolaterals_JS.changeFace("nice");
+        };
+
+        var simpleNiceRadio = new radioButtonsGroup.RadioButtonsGroup(
+        [simpleSpirolaterals_JSButton, niceSpirolaterals_JSButton]);
+
+        var writeTimeButton = document.getElementById("write-time-button");
+        writeTimeButton.onclick = function () {
+            this.classList.toggle('active');
+            var active = this.classList.contains('active');
+            Spirolaterals_JS.changeWriteTime(active);
+        };
+
+        var writeDateButton = document.getElementById("write-date-button");
+        writeDateButton.onclick = function () {
+            this.classList.toggle('active');
+            var active = this.classList.contains('active');
+            Spirolaterals_JS.changeWriteDate(active);
+        };*/
+
+    });
+});
